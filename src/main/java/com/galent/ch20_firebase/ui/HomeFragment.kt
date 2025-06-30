@@ -21,7 +21,7 @@ import java.util.Locale
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
 
-    private val apiKey = "REMOVED"
+    private val apiKey = "apiKey"
     private val city = "Seoul"
 
 
