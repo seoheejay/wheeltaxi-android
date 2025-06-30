@@ -31,16 +31,17 @@
 ---
 
 ## 🗂️ 프로젝트 구조 (일부)
+<pre> 
 wheeltaxi/
-├── app/
-│ ├── src/
-│ │ ├── main/
-│ │ │ ├── java/com/galent/wheeltaxi/ # 주요 액티비티 및 서비스
-│ │ │ ├── res/ # 레이아웃, 리소스
-│ │ │ └── AndroidManifest.xml
+└── app/
+└── src/
+└── main/
+├── java/com/galent/wheeltaxi/ # Activities and services
+├── res/ # Layouts, drawables, etc.
+└── AndroidManifest.xml
 ├── build.gradle.kts
 └── README.md
-
+</pre>
 - API Key 등 민감 정보는 `.gitignore`로 관리하며 레포지토리에 포함되어 있지 않습니다.
 
 ---
