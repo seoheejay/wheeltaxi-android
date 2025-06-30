@@ -95,11 +95,11 @@ class AuthActivity : AppCompatActivity() {
                     binding.authPasswordEditView.text.clear()
 
                     if (task.isSuccessful) {
-                        // ✅ 인증 메일 전송
+                        // 인증 메일 전송
                         MyApplication.auth.currentUser?.sendEmailVerification()
                             ?.addOnCompleteListener { sendTask ->
                                 if (sendTask.isSuccessful) {
-                                    android.util.Log.d("AuthActivity", "✅ 인증 메일 전송 성공")
+                                    android.util.Log.d("AuthActivity", "인증 메일 전송 성공")
                                     Toast.makeText(
                                         baseContext,
                                         "회원가입에 성공하였습니다. 메일을 확인해 주세요",
@@ -109,7 +109,7 @@ class AuthActivity : AppCompatActivity() {
                                 } else {
                                     android.util.Log.e(
                                         "AuthActivity",
-                                        "❌ 인증 메일 전송 실패: ${sendTask.exception?.message}"
+                                        "인증 메일 전송 실패: ${sendTask.exception?.message}"
                                     )
                                     Toast.makeText(
                                         baseContext,
@@ -145,7 +145,7 @@ class AuthActivity : AppCompatActivity() {
         }
 
         binding.loginBtn.setOnClickListener {
-            //이메일, 비밀번호 로그인.......................
+            //이메일, 비밀번호 로그인
             val email = binding.authEmailEditView.text.toString()
             val password = binding.authPasswordEditView.text.toString()
             MyApplication.auth.signInWithEmailAndPassword(email, password)
