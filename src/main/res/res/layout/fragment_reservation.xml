@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_warm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textColorHint="@color/text_hint"
+        android:hint="출발지"
+        android:background="@drawable/input_background"
+        android:textColor="@color/text_main"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="도착지"
+        android:textColorHint="@color/text_hint"
+        android:background="@drawable/input_background"
+        android:textColor="@color/text_main"
+        android:layout_marginBottom="12dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/desc_spinner_day" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="정기 예약 등록하기"
+        android:backgroundTint="@color/primary_warm"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reservationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:contentDescription="@string/desc_reservation_list" />
+
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전체 정기 예약 삭제하기"
+        android:backgroundTint="@color/primary_warm"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

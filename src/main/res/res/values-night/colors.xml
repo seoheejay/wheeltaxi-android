@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_warm">#000000</color> <!-- 배경을 검정색으로 설정 -->
+    <color name="text_main">#FFFFFF</color>       <!-- 텍스트는 흰색으로 -->
+    <color name="primary_warm">#ada087</color>
+    <color name="card_bg">#1A1A1A</color>         <!-- 카드 배경 등도 어두운 회색 -->
+    <color name="text_hint">#CCCCCC</color>
+</resources>

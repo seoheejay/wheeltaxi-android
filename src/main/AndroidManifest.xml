@@ -1,0 +1,89 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.galent.wheeltaxi">
+
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject"
+        >
+
+        <receiver
+            android:name=".ReplyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="your_api_key_here" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="fcm_default_channel" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_native_key" />
+
+        <service
+            android:name=".MyFirebaseMessageService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyProject.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="pass" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity android:name=".WebViewActivity"
+            android:exported="true"
+            android:hardwareAccelerated="true"/>
+
+
+    </application>
+
+</manifest>

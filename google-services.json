@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "396563281178",
+    "project_id": "myfireandroid",
+    "storage_bucket": "myfireandroid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396563281178:android:828b20664ebb85cabca8a3",
+        "android_client_info": {
+          "package_name": "com.alschlee.ch20_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396563281178-i2rv7n4o60cjb9359bbp402jcdd8u3b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEPcv1VV7Nlq1MNTN_ZIwAZURJdCtj49k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396563281178-i2rv7n4o60cjb9359bbp402jcdd8u3b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396563281178:android:d2a9021bb50080d4bca8a3",
+        "android_client_info": {
+          "package_name": "com.galent.ch20_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396563281178-i2rv7n4o60cjb9359bbp402jcdd8u3b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEPcv1VV7Nlq1MNTN_ZIwAZURJdCtj49k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396563281178-i2rv7n4o60cjb9359bbp402jcdd8u3b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

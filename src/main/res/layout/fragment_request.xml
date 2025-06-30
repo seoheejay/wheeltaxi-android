@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_warm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:text="콜택시 신청"
+            android:textSize="22sp"
+            android:textColor="@color/text_main"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/editStart"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="출발지 입력"
+                android:background="@drawable/input_background"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_hint"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnFindStartAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소 찾기"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/primary_warm"
+                android:textColor="@color/white"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:minHeight="48dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editMemo_start"
+            android:hint="출발시 요청사항(선택)"
+            android:textColorHint="@color/text_hint"
+            android:background="@drawable/input_background"
+            android:textColor="@color/text_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/editEnd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="도착지 입력"
+                android:textColorHint="@color/text_hint"
+                android:background="@drawable/input_background"
+                android:textColor="@color/text_main"
+                android:padding="12dp" />
+
+
+            <Button
+                android:id="@+id/btnFindEndAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주소 찾기"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/primary_warm"
+                android:textColor="@color/white"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:minHeight="48dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editMemo"
+            android:hint="도착시 요청사항(선택)"
+            android:textColorHint="@color/text_hint"
+            android:background="@drawable/input_background"
+            android:textColor="@color/text_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:text="탑승일시"
+            android:textSize="22sp"
+            android:textColor="@color/text_main"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="즉시 신청하기"
+            android:backgroundTint="@color/primary_warm"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnSubmit2"
+            android:text="신청 예약하기"
+            android:backgroundTint="@color/primary_warm"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

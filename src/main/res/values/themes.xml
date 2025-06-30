@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 추가할 컬러 설정들 -->
+        <item name="colorPrimary">@color/primary_warm</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/secondary_mint</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/background_warm</item>
+        <item name="android:textColor">@color/text_main</item>
+
+        <!-- 아래는 필요에 따라 추가 가능 -->
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorError">@color/error</item>
+    </style>
+
+    <!-- Main app theme that uses the base -->
+    <style name="Theme.MyProject" parent="Base.Theme.MyProject" />
+
+    <!-- Splash 전용 테마 -->
+    <!--
+    <style name="Theme.MyProject.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background_warm</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyProject</item>
+    </style>
+    -->
+    <!-- res/values/styles.xml -->
+    <style name="Theme.MyProject.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+
+</resources>

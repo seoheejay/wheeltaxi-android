@@ -1,0 +1,13 @@
+/build
+# 환경 설정 파일
+.env
+config.py
+settings.py
+
+# DB 파일
+*.db
+*.sqlite
+
+# 개인 데이터
+private_info.json
+secrets/

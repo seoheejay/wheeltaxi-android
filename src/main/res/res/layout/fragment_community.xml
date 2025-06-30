@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_warm">
+
+    <WebView
+        android:id="@+id/youtubeWebView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/communityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        tools:ignore="MissingContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/communityFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/desc_add_post"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/primary_warm"
+        android:tint="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_warm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle">
+
+        <!-- 푸시 알림 설정 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/card_bg"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:text="푸시 알림"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Switch
+                android:id="@+id/switchPush"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 다크모드 설정 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/card_bg"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:text="다크 모드"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Switch
+                android:id="@+id/switchDark"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 기본 출발지 설정 -->
+        <EditText
+            android:id="@+id/editDefaultStart"
+            android:hint="기본 출발지를 입력하세요"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_hint"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editGuardianName"
+            android:hint="보호자 이름"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_hint"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 보호자 전화번호 -->
+        <EditText
+            android:id="@+id/editGuardianPhone"
+            android:hint="보호자 전화번호"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_hint"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerFontSize"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/spinner_fontsize_desc"/>
+
+
+        <!-- 아래 기존 항목 유지 -->
+        <LinearLayout
+            android:id="@+id/setting_account"
+            android:background="@color/card_bg"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="계정관리"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_payment"
+            android:background="@color/card_bg"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="간편결제 관리"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_logout"
+            android:background="@color/card_bg"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="로그아웃"
+                android:textColor="@color/error"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
