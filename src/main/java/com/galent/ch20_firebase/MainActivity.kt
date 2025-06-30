@@ -148,7 +148,7 @@ class MainActivity : AppCompatActivity() {
         try {
             val packageInfo = context.packageManager.getPackageInfo(
                 context.packageName,
-                PackageManager.GET_SIGNATURES // ✅ 모든 버전 호환
+                PackageManager.GET_SIGNATURES // 모든 버전 호환
             )
 
             val signatures = packageInfo.signatures
